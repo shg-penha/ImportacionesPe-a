@@ -128,7 +128,7 @@ h4 {
 .site-header.inicio {
     background: url(../img/impor.png);
     background-position: center center;
-    background-size: cover;
+    background-size: 400%;
     background-repeat: no-repeat;
     height: 100vh;
     min-height: 50vh;
@@ -198,7 +198,9 @@ h4 {
 
 /* HEADER RESPONIVE */
 @media(min-width:768px){
-
+    .site-header.inicio{
+        background-size: cover;
+    }
 }
 
 @media(min-width:1024px){
