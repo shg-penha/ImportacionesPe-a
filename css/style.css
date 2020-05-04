@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    ;
+}
+
+
+/**Golbales**/
+
+img {
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 5rem;
+}
+
+
+/**logo**/
+
+.logo-pex {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 2.6rem;
+}
+
+
+/**utilidades**/
+
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.d-block {
+    display: block!important;
+}
+
+.contenido-centrado {
+    max-width: 800px;
+}
+
+
+/**Botones**/
+
+.boton {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    margin-top: 2rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.boton-amarillo {
+    background-color: #E08709;
+}
+
+.boton-verde {
+    background-color: #71b100;
+}
+
+
+/* INICIO DE PAGINA */
+
+
+/* Estilos del icon-menu */
+
+.icon-menu {
+    color: #ffffff;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+
+/* Header */
+
+.site-header {
+    background-color: #333333;
+    padding: 0 0 3rem 0;
+}
+
+.site-header.inicio {
+    background: url(../img/impor.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70vh;
+    min-height: 50vh;
+}
+
+.contenido-header{
+    position: fixed;
+    width: 100%;
+}
+
+.content-logo{
+    background-color: #333055;
+    height: 7rem;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+.logo-h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.contenido-header h1 {
+    color: #ffffff;
+    max-width: 60rem;
+    line-height: 2rem;
+}
+
+.barra {
+    position: relative;
+    width: 70%;
+    height: 100vh;
+    background-color: #333055;
+    left: -100%;
+    transition: ease 0.5s;
+}
+.mostrar {
+    left: 0;
+}
+
+
+/**Navegacion**/
+
+.navegacion a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding-bottom: 1.5rem;
+    padding-left: 5rem;
+    padding-top: 1.5rem;
+    transition: ease .5s;
+    /* border-bottom: solid .5px #E08709; */
+}
+
+.navegacion a:hover {
+    color: #E08709;
+    background-color: #423f5cf1;
+}
+
+/* HEADER RESPONIVE */
+@media(min-width:768px){
+
+}
+
+@media(min-width:1024px){
+    .icon-menu{
+        display: none;
+    }
+    .content-logo, .barra{
+        background-color: transparent;
+    }
+    .logo-h1{
+        margin: 0;
+        padding-top: 1rem;
+    }
+    .barra{
+        left: 0;    
+        height: 10rem;
+    }
+    .navegacion{
+        display: flex;
+        padding-top: 1rem;
+        float: right;
+        right: 0;
+    }
+    .contenido-header{
+        display: flex;
+        justify-content: space-between;
+        height: 10rem;
+    }
+}
+
+
+/**iconos nosotros**/
+.encabezado{
+    color: #333055;
+}
+.iconos-nosotros {
+    /* display: flex;
+    justify-content: space-between; */
+    display: block;
+}
+
+.icono {
+    /* flex-basis: calc(33.3% - 1rem);
+    text-align: center; */
+    margin-bottom: 5rem;
+}
+
+.iconologo {
+    width: 60%;
+    margin-left: 20%;
+    max-width: 60%;
+}
+
+.icono h3 {
+    text-transform: inherit;
+    text-align: center;
+    
+}
+.icono-txt{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #333055cc;
+}
+.fw-300{
+    color: #E08709;
+}
+@media(min-width:768px){
+    .iconos-nosotros{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-bottom: 5rem;
+    }
+    .icono{
+        width: 100%;
+    }
+    .iconologo{
+        width: 60%;
+        height: 40%;
+    }
+    .icono-txt{
+        width: 80%;
+        margin-left: 10%;
+    }
+}
+/**anuncios**/
+
+.contenedor-anuncios {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.anuncio {
+    flex: 0 0 calc(33.3% - 1rem);
+    border: solid 1px #b5b5b5;
+    background-color: #f5f5f5;
+    margin-bottom: 2rem;
+}
+
+.contenido-anuncio {
+    padding: 2rem 4rem 2rem 4rem;
+}
+
+.contenido-anuncio h3,
+p {
+    margin: 0;
+    line-height: 2.5;
+}
+
+.precio {
+    color: #568505;
+    font-weight: 700;
+}
+
+.iconos-caracteristicas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 500px;
+}
+
+.iconos-caracteristicas li {
+    flex: 1;
+    display: flex;
+}
+
+.iconos-caracteristicas li img {
+    margin-right: 2rem;
+}
+
+.ver-todas {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/**Contacto Home**/
+
+.imagen-contacto {
+    background-image: url(../img/fondo.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+}
+.contenido-contacto h2 span{
+    color: #333055;
+    background-color: #ffffff;
+    padding: 0.3rem;
+    font-size: 3rem;
+}
+.contenido-contacto h2{
+    line-height: 4rem;
+    font-size: 3rem;
+}
+.contenido-contacto {
+    width: 50%;
+    color: #ffffff;
+}
+.contenido-contacto p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+@media(min-width:768px){
+    .contenido-contacto h2{
+        font-size: 4rem;
+        margin-top: -1rem;
+        line-height: 5rem;
+    }
+    .contenido-contacto p{
+        width: 70%;
+        margin-top: -2rem;
+    }
+    .contenido-contacto h2 span{
+        font-size: 4rem;
+    }
+}
+@media(min-width:1024px){
+    .imagen-contacto{
+        margin-top: -10rem;
+    }
+}
+
+
+
+/**Blocke verde**/
+
+
+/**pseudo-elementos**/
+
+.texto-entrada h4::after {
+    content: '';
+    display: block;
+    width: 15rem;
+    height: .5rem;
+    background-color: #71b100;
+}
+
+.texto-entrada span {
+    color: #E08709;
+}
+
+/* SERVICIOS */
+
+.icono-ser{
+    width: 65%;
+    margin-left: 17.5%;
+}
+
+
+/* footer */
+.site-footer {
+    background-color: #333333;
+    margin: 0;
+}
+
+.contenedor-footer {
+    padding: 3rem 0;
+    display: block;
+}
+.navegacion2{
+    text-align: center;
+}
+.navegacion2 a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+.copyrigth {
+    padding-top: 3rem;
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+}
+@media(min-width:768px){
+    .contenedor-footer{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5rem;
+    }
+    .copyrigth{
+        padding-top: 0;
+    }
+}
+
+/** INTERNAS**/
+
+
+/**nosotros**/
+
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+}
+
+.texto-nosotros blockquote {
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 1rem 3rem 0 0;
+}
+
+
+/**anuncios**/
+
+.resumen-propiedad {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/**Contactos**/
+
+.contacto p {
+    font-size: 1.4rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+}
+
+legend {
+    font-size: 2rem;
+    color: #4f4f4f;
+}
+
+label {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+}
+
+input:not([type="submit"]),
+textarea,
+select {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #e1e1e1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+
+input [type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    height: 10rem;
+}
+
+.forma-contacto {
+    max-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*EFECTOS DE LA LETRAS*/
+
+@-webkit-keyframes wobble {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes wobble {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+        transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+    }
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+        transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+    }
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+    }
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+    }
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+    }
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble;
+}
+
+.efecto {
+    animation: wobble 3s;
+}
