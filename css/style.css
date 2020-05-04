@@ -122,12 +122,12 @@ h4 {
 
 .site-header {
     background-color: #333333;
-    padding: 0 0 3rem 0;
+    padding: 0 0 0rem 0;
 }
 
 .site-header.inicio {
     background: url(../img/impor.png);
-    background-position: center center;
+    background-position-x: center;
     background-size: 400%;
     background-repeat: no-repeat;
     height: 100vh;
