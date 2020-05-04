@@ -149,7 +149,9 @@ h4 {
     align-items: center;
     padding: 2rem;
 }
-
+.logo a{
+    text-decoration: none;
+}
 .logo-h1 {
     font-size: 3rem;
     margin: 0;
@@ -220,10 +222,15 @@ h4 {
         float: right;
         right: 0;
     }
+    .navegacion a{
+        padding-left: 0rem;
+        padding-right: 5rem;
+    }
     .contenido-header{
         display: flex;
         justify-content: space-between;
-        height: 10rem;
+        height: 7rem;
+        background-color: #333055;
     }
 }
 
