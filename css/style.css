@@ -135,13 +135,14 @@ h4 {
 }
 
 .contenido-header{
-    position: fixed;
     width: 100%;
 }
 
 .content-logo{
+    position: fixed;
     background-color: #333055;
     height: 10rem;
+    width: 100%;
 }
 .logo {
     display: flex;
@@ -164,11 +165,12 @@ h4 {
 }
 
 .barra {
-    position: relative;
+    position: fixed;
     width: 70%;
     height: 100vh;
     background-color: #333055;
     left: -100%;
+    margin-top: 10rem;
     transition: ease 0.5s;
 }
 .mostrar {
@@ -202,6 +204,19 @@ h4 {
         background-size: cover;
         height: 100vh;
     }
+    .contenido-header{
+        position: inherit;
+        
+    }
+    .content-logo{
+        position: fixed;
+        width: 100%;
+        background-color: #333055;
+    }
+    .barra{
+        position: fixed;
+        margin-top: 10rem;
+    }
 }
 
 @media(min-width:1024px){
@@ -209,17 +224,22 @@ h4 {
         display: none;
     }
     .content-logo, .barra{
+        width: 100%;
         background-color: transparent;
     }
-    .logo-h1{
+    .logo a img{
+        width: 7rem;
+        height: 7rem;
         margin: 0;
-        padding-top: 1rem;
+        padding: 1rem;
     }
     .barra{
         left: 0;    
-        height: 10rem;
+        height: 0rem;
+        margin-top: 0;
     }
     .navegacion{
+        position: relative;
         display: flex;
         padding-top: 1rem;
         float: right;
@@ -233,9 +253,10 @@ h4 {
         background-color: transparent;
     }
     .contenido-header{
+        position: fixed;
         display: flex;
         justify-content: space-between;
-        height: 7rem;
+        height: 8rem;
         background-color: #333055;
     }
 }
@@ -244,6 +265,15 @@ h4 {
 /**iconos nosotros**/
 .encabezado{
     color: #333055;
+    text-transform: inherit;
+    text-align: center;
+    margin-top: -3rem;
+}
+.encabezado1{
+    text-transform: inherit;
+    text-align: center;
+    color: #333055;
+    margin-top: 2rem;
 }
 .iconos-nosotros {
     /* display: flex;
@@ -258,17 +288,19 @@ h4 {
 }
 
 .iconologo {
-    width: 60%;
-    margin-left: 20%;
-    max-width: 60%;
-}
-
-.icono h3 {
-    text-transform: inherit;
-    text-align: center;
-    
+    display: block;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30rem;
 }
 .icono-txt{
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #333055cc;
+}
+.icon-dos{
     font-size: 1.5rem;
     line-height: 3rem;
     text-align: center;
@@ -288,8 +320,8 @@ h4 {
         width: 100%;
     }
     .iconologo{
-        width: 60%;
-        height: 40%;
+        width: 25rem;
+        height: 25rem;
     }
     .icono-txt{
         width: 80%;
@@ -357,9 +389,11 @@ p {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 50rem;
     display: flex;
     align-items: center;
+    margin-top: 5rem;
 }
 .contenido-contacto h2 span{
     color: #333055;
@@ -396,7 +430,7 @@ p {
 }
 @media(min-width:1024px){
     .imagen-contacto{
-        margin-top: -10rem;
+        margin-top: -5rem;
     }
 }
 
