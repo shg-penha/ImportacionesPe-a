@@ -12,12 +12,16 @@
     <link rel="stylesheet " href="css/animate.css">
     <link rel="stylesheet" href="css/fontello.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+    
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://kit.fontawesome.com/fbe35ac8bd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header class="site-header inicio">
 
-        <div class="contenido-header">
+        <div class="contenido-header up">
             <div class="content-logo">
                 <div class="contenedor logo">
                     <a href="index.html"><img src="img/icons/Logo1.png" alt=""></a>
@@ -97,7 +101,68 @@
             </section>
         </main>
     </div>
-
+    <div class="mapas">
+        <div class="contenedor form-map">
+            <h2 class="fw-300 centrar-texto up-cont">Contáctanos</h2>
+            <div class="content-icon">
+                <div class="icon-conta">
+                    <div class="icon-one">
+                        <h2>Ubicación</h2>
+                        <div class="icon-two">
+                            <span><i class="fas fa-map-marked-alt"></i></span>
+                            <p> Av. Republica de chile 472 <br>oficina 405 - Jesus Maria</p>
+                        </div>
+                    </div>
+                    <div class="icon-one">
+                        <h2>Teléfono</h2>
+                        <div class="icon-two">
+                            <span><i class="fas fa-mobile-alt"></i></span>
+                            <p>999-999-999<br>999-999-999<br>999-999-999</p> 
+                            </div>
+                        </div>
+                    <!-- <div class="icon-one">
+                        <h2>Horarios</h2>
+                        <div class="icon-two">
+                            <span><i class="fas fa-user-clock"></i></span>
+                            <p>Las 24/7</p>
+                        </div>
+                    </div> -->
+                    <div class="icon-one">
+                        <h2>Email</h2>
+                        <div class="icon-two">
+                            <span><i class="fas fa-envelope-open-text"></i></span>
+                            <p>hola@importaciones<br>penha.com</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="fw-300 centrar-texto">Completar el Formulario</h2>
+            <form action="index.html" method="POST" target="_blank">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input class="input-cont" type="text" name="nombre" id="nombreContacto" placeholder="Nombre y Apellido:" required>
+                </div>
+                <div class="campo">
+                    <label for="apellido">Correo:</label>
+                    <input class="input-cont" type="text" name="correo" id="correoContacto" placeholder="Correo:" required>
+                </div>
+                <div class="campo">
+                    <label for="Nombre">Celular:</label>
+                    <input class="input-cont" type="text" name="celular" id="celularContacto" placeholder="Celular:" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="mensaje" id="mensajeContacto" placeholder="Mensaje:" required></textarea>
+                </div>
+                <div class="btn-enviar">
+                    <input class="" type="submit" id="Enviar" class="btn-enviar" value="Enviar">
+                </div>
+            </form>
+        </div>
+        <div class="content-map">
+            <div id="map" class="mapa"></div>
+        </div>
+    </div>
     <footer class="site-footer seccion">
         <div class="contenedor-footer">
             <nav class="navegacion2">
@@ -110,6 +175,9 @@
         </div>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/mapa.js"></script>
 </body>
+
 
 </html>
