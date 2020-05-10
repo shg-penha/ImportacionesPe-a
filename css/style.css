@@ -525,6 +525,128 @@ p {
     align-items: center;
 }
 
+/****** CONTACTO ************/
+
+.icon-conta{
+    width: 100%;
+}
+.icon-one h2{
+    color: #E08709;
+    font-size: 3rem;
+}
+.icon-two span i{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+    color: #333055b0;
+    transition: ease 0.3s;
+    cursor: pointer;
+    border: 4px solid #333055b0;;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+    padding-top: 1.5rem;
+    
+}
+.icon-two span i:hover{
+    color: #333055;
+    border: 4px solid #333055;
+
+}
+.icon-two{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;    
+    margin-top: -2rem;
+}
+.icon-one{
+    width: 100%;
+    text-align: left;
+    margin-top: 2rem;
+}
+.icon-one p{
+    width: 100%;
+    color: #333055c5;
+    font-size: 1.5rem;
+    line-height: 2.5rem; 
+    margin-left: 2rem;   
+}
+.mapas {
+    background-color: #e0e0e098;
+    color: #ffffff;
+    margin-top: 5rem;
+    box-sizing: border-box;
+}
+
+.mapa {
+    width: 100%;
+    margin-top: 0;
+    height: 18rem;
+    z-index: 1;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#Enviar {
+    background: #423f5cf1;
+    color: #ffffff;
+    padding: 20px;
+    width: 100%;
+}
+
+#Enviar:hover {
+    cursor: pointer;
+}
+
+.campo label{
+    display: none;
+}
+.input-cont{
+    padding: 2rem !important;
+    font-size: 1.2rem;
+}
+.input-cont::placeholder{
+    color: #000000;
+    font-size: 1.2rem;
+}
+.content-map{
+    margin-top: 2rem;
+    padding: 0;
+}
+.up-cont{
+    margin-top: 2rem !important;
+}
+/*Responsive Login*/
+
+@media(min-width:1024px) {
+    .content-map{
+        margin-top: 0;   
+    }
+    .mapa {
+        height: 100%;
+        margin: 0;
+    }
+    .mapas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 5rem;
+    }
+    .btn-enviar {
+        width: 70%;
+        margin-left: 7.5%;
+        margin-top: 2rem;
+    }
+    .content-map {
+        height: 100%;
+    }
+}
 
 /**Contactos**/
 
