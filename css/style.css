@@ -300,10 +300,12 @@ h4 {
     color: #333055cc;
 }
 .icon-dos{
+    width: 80%;
     font-size: 1.5rem;
     line-height: 3rem;
     text-align: center;
     color: #333055cc;
+    margin-left: 10%;
 }
 .fw-300{
     color: #E08709;
